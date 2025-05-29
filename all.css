@@ -83,7 +83,7 @@ header a {
     width:50%;
 }
 .banner_2 img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: bottom;
 }
 .title {
@@ -96,6 +96,7 @@ header a {
 .title h2 {
     font-size: 24px;
     color: #0027d5;
+    line-height: 150%;
 }
 .title span {
     font-size: 16px;
@@ -111,6 +112,31 @@ header a {
     font-size: 28px;
     font-weight: 700;
     margin-top: 20px;
+    line-height: 150%;
+}
+@media (max-width: 992px) {
+    .banner_2 {
+        flex-direction: column;
+    }
+    .banner_2 div{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner_2 img {
+        width: 100%;
+    }
+    .title {
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 80px 0 ;
+    }
+}
+@media (max-width: 762px) {
+    .title {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 80px 0 ;
+    }
 }
 .content {
     max-width: 35%;
@@ -130,6 +156,7 @@ header a {
     font-size: 28px;
     color: #0027d5;
     font-weight: 700;
+    line-height: 150%;
 }
 .subpage ul {
     list-style-type: decimal;
@@ -179,6 +206,16 @@ header a {
     border-radius: 24px;
     padding: 24px;
 }
+@media (max-width: 992px) {
+    .content {
+        max-width: 60%;
+    }
+}
+@media (max-width: 762px) {
+    .content {
+        max-width: 90%;
+    }
+}
 .contact {
     max-width: 100%;
     border-top: 1px solid #6c757d;
@@ -187,7 +224,7 @@ header a {
     justify-content: center;
 }
 .contact a {
-    width: 60%;
+    width: 50%;
     font-size: 32px;
     color: black;
     text-decoration: none;
@@ -199,12 +236,12 @@ header a {
 @media (max-width: 992px) {
     .contact{
         max-width: 100%;
+        padding: 20px 5%;
         flex-direction: column;
-        gap: 40px;
-        justify-content: center;
+        gap: 20px;
     }
     .contact a {
-        width: 80%;
+        width: 90%;
         text-align: center;
         margin: 0 auto;
     }
@@ -213,9 +250,20 @@ header a {
         width: 60%;
         margin: 0 auto;
         text-align: center;
-}
+        
     }
+    }
+@media (max-width: 762px) {
+    .contact {
+        display: none;
+    }
+}
 footer{
     text-align: center;
     padding: 24px 0;
+}
+@media (max-width: 992px) {
+    footer {
+        border-top: 1px solid #6c757d;
+    }   
 }
