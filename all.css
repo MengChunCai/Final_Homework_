@@ -48,10 +48,174 @@ table {
 }
 
 /*以下是用全網設定*/
-
-
-
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    line-height: 150%;
+    }
+header {
+    max-width: 100%;
+    text-align: center;
+    padding: 24px 0;
+}
+header a {
+    color: black;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0px 20px;
+}
 
 
 
 /*以下是blog_detail設定*/
+.banner_2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #6c757d;
+    border-bottom: 1px solid #6c757d;
+}
+.banner_2 div{
+    width:50%;
+}
+.banner_2 img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+.title {
+    max-width: 100%;
+    margin-left: 24px;    
+}
+.title p {
+    margin-bottom: 10px;
+}
+.title h2 {
+    font-size: 24px;
+    color: #0027d5;
+}
+.title span {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    vertical-align: middle;
+    background: #0027d5;
+    border-radius: 40px;
+    padding: 5px 12px;
+    margin: 0 10px;
+}
+.title h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.content {
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+} 
+.subpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.subpage h2 {
+    font-size: 28px;
+    color: #0027d5;
+    font-weight: 700;
+}
+.subpage ul {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.subpage ol {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.subpage li {
+    margin-left: 2rem;
+}
+.subpage a{
+    color:#0027d5;
+}
+.box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.box p {
+    margin-bottom: 5px;
+}
+.box a{
+    text-decoration: none;
+}
+.buttom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttom a {
+    color: #4b4b4b;
+    text-decoration: none;
+    border: 1px solid #4b4b4b;
+    border-radius: 40px;
+    padding: 8px 16px;
+}
+.buttom a:hover {
+    color: white;
+    text-decoration: none;
+    background: #4b4b4b;
+}
+.gray {
+    font-weight: 700;
+    background: #ededed;
+    border-radius: 24px;
+    padding: 24px;
+}
+.contact {
+    max-width: 100%;
+    border-top: 1px solid #6c757d;
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+}
+.contact a {
+    width: 60%;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    margin-right: 2%;
+}
+.media {
+    width: 20%;
+}
+@media (max-width: 992px) {
+    .contact{
+        max-width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+    }
+    .contact a {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .media {
+        flex-direction: row;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+}
+    }
+footer{
+    text-align: center;
+    padding: 24px 0;
+}
