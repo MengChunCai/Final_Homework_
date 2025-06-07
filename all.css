@@ -136,7 +136,7 @@ header a {
     }
     .banner_2_img {
         min-width: 100%;
-        height: 50%;
+        height: 60%;
         margin: 0 auto;
     }
     .banner_2_img img {
@@ -144,10 +144,17 @@ header a {
         height: 100%;
     }
     .title {
+        height: auto;
         width: 95%;
-        height: 50%;
+        height: 40%;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
         align-items: center;
+    }
+    .title_container {
+        padding: 0;
+        display: block;
     }
 }
 .content {
@@ -485,30 +492,27 @@ footer{
     text-decoration: none;
 }
 @media (max-width: 992px){
+
     .banner {
         flex-direction: column;
-        width: 100vw;
+        max-width: 100vw;
         height: 80vh;
     }
     .title_img {
         width: 100%;
         height: 70%;
-        overflow: hidden;
     }
     .title_img img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
     .blog_title {
-        width: 100vw;
+        width: 100%;
         height: 30%;
-        overflow: hidden;
     }
     .blog_title img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
     .title_text {
         bottom: 12%;
